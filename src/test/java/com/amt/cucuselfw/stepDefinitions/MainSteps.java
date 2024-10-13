@@ -25,6 +25,13 @@ public class MainSteps {
   public void user_login_into_application_with_and_password(String username, String password) {
     System.out.printf("User login into application with %s and password %s", username, password);
     // Write code here that turns the phrase above into concrete actions
+    //    throw new io.cucumber.java.PendingException();
+  }
+
+  @When("User login into application with {string} and password {string} combination")
+  public void user_login_into_application_with_and_password_combination(String username, String password) {
+    System.out.printf("User login into application with %s and password %s combination", username, password);
+    // Write code here that turns the phrase above into concrete actions
 //    throw new io.cucumber.java.PendingException();
   }
 

@@ -18,6 +18,17 @@ Feature: Application Login
     Then Home Page is displayed
     And Cards are displayed
     Examples:
-    | username    | password  |
-    | debituser   | hello2    |
-    | credituser  | hello3    |
+      | username   | password |
+      | debituser  | hello2   |
+      | credituser | hello3   |
+
+
+  Scenario Outline: User Page default login with DatTypes preserved
+    Given User is on Netbanking landing page
+    When User login into application with <username> and pin <pin> combination
+    Then Home Page is displayed
+    And Cards are displayed
+    Examples:
+      | username   | pin |
+      | debituser  | 1234   |
+      | credituser | 5678   |

@@ -23,16 +23,23 @@ public class MainSteps {
 */
   @When("User login into application with {string} and password {string}")
   public void user_login_into_application_with_and_password(String username, String password) {
-    System.out.printf("User login into application with %s and password %s", username, password);
+    System.out.printf("User login into application with %s and password %s\n", username, password);
     // Write code here that turns the phrase above into concrete actions
     //    throw new io.cucumber.java.PendingException();
   }
 
   @When("User login into application with {string} and password {string} combination")
   public void user_login_into_application_with_and_password_combination(String username, String password) {
-    System.out.printf("User login into application with %s and password %s combination", username, password);
+    System.out.printf("User login into application with %s and password %s combination\n", username, password);
     // Write code here that turns the phrase above into concrete actions
-//    throw new io.cucumber.java.PendingException();
+    //    throw new io.cucumber.java.PendingException();
+  }
+
+  @When("^User login into application with (.+) and pin (.+) combination$")
+  public void user_login_into_application_with_username_and_pin_combination(String username, Integer pin) {
+    System.out.printf("User login into application with %s and pin %d combination\n", username, pin);
+    // Write code here that turns the phrase above into concrete actions
+    //    throw new io.cucumber.java.PendingException();
   }
 
   @Then("Home Page is displayed")

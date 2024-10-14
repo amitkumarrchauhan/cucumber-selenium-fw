@@ -63,7 +63,7 @@ public class MainSteps {
   public void user_is_on_practice_landing_page() {
     System.out.println("User is on practice landing page");
     // Write code here that turns the phrase above into concrete actions
-//    throw new io.cucumber.java.PendingException();
+    //    throw new io.cucumber.java.PendingException();
   }
 
   /**
@@ -84,7 +84,28 @@ public class MainSteps {
     String contact = data.get(3);
 
     System.out.println("User signup with following information: ");
-    System.out.printf("firstName=%s, lastName=%s,  email =%s, contact=%s, \n", firstName, lastName,  email , contact);
+    System.out.printf("firstName=%s, lastName=%s,  email =%s, contact=%s, \n", firstName, lastName, email, contact);
+    //    throw new io.cucumber.java.PendingException();
+  }
+
+  @Given("setup the entries in database")
+  public void setup_the_entries_in_database() {
+    System.out.println("\n\nsetup the entries in database DONE");
+    // Write code here that turns the phrase above into concrete actions
+//    throw new io.cucumber.java.PendingException();
+  }
+
+  @When("launch the browser based on config variables")
+  public void launch_the_browser_based_on_config_variables() {
+    System.out.println("launch the browser based on config variables DONE");
+    // Write code here that turns the phrase above into concrete actions
+//    throw new io.cucumber.java.PendingException();
+  }
+
+  @When("hit the home page url of banking site")
+  public void hit_the_home_page_url_of_banking_site() {
+    System.out.println("hit the home page url of banking site DONE");
+    // Write code here that turns the phrase above into concrete actions
 //    throw new io.cucumber.java.PendingException();
   }
 

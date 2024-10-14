@@ -1,5 +1,13 @@
 Feature: Application Login
 
+# scope of background is within the feature file and is run for each scenarios first then scenario steps follow after that
+# It is more like beforeEach
+
+  Background:
+    Given setup the entries in database
+    When launch the browser based on config variables
+    And hit the home page url of banking site
+
   @RegressionTest
   Scenario: Admin Page default login
     Given User is on Netbanking landing page

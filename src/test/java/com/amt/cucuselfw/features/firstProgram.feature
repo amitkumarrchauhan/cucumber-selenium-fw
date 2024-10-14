@@ -32,3 +32,13 @@ Feature: Application Login
       | username   | pin |
       | debituser  | 1234   |
       | credituser | 5678   |
+
+ Scenario: User Page default Sign up
+   Given User is on practice landing page
+   When User Signup into application
+   |  amitkumar |
+   |  chauhan   |
+   | amitkumar.chauhan@gmail.com  |
+   | 12345678 |
+   Then Home Page is displayed
+   And Cards are displayed

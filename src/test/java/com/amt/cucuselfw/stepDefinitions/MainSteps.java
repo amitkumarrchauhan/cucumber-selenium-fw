@@ -4,6 +4,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.util.List;
+
 public class MainSteps {
 
   @Given("User is on Netbanking landing page")
@@ -54,6 +56,36 @@ public class MainSteps {
     System.out.println("cards are displayed");
     //     Write code here that turns the phrase above into concrete actions
     //    throw new io.cucumber.java.PendingException();
+  }
+
+
+  @Given("User is on practice landing page")
+  public void user_is_on_practice_landing_page() {
+    System.out.println("User is on practice landing page");
+    // Write code here that turns the phrase above into concrete actions
+//    throw new io.cucumber.java.PendingException();
+  }
+
+  /**
+   * Getting/setting list of form field values to steps
+   */
+  @When("User Signup into application")
+  public void user_signup_into_application(/*io.cucumber.datatable.DataTable dataTable*/List<String> data) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    String firstName = data.get(0);
+    String lastName = data.get(1);
+    String email = data.get(2);
+    String contact = data.get(3);
+
+    System.out.println("User signup with following information: ");
+    System.out.printf("firstName=%s, lastName=%s,  email =%s, contact=%s, \n", firstName, lastName,  email , contact);
+//    throw new io.cucumber.java.PendingException();
   }
 
 }

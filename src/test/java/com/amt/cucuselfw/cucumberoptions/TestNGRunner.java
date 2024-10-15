@@ -8,7 +8,8 @@ import io.cucumber.testng.CucumberOptions;
     //    tags="@SmokeTest and @RegressionTest"
     //    tags="@SmokeTest or @RegressionTest"
     //    tags = "not @RegressionTest"
-    tags = ""
+    tags = "",
+    plugin = {"pretty", "html:target/cucumber.html"}
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
 }

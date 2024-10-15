@@ -11,6 +11,7 @@
 .settings/
 
 .idea/
+cucumber-selenium-fw.iml
 
 
 # MacOS

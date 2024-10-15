@@ -3,6 +3,8 @@ package com.amt.cucuselfw.stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Assert;
+import org.testng.asserts.Assertion;
 
 import java.util.List;
 
@@ -64,6 +66,8 @@ public class MainSteps {
     System.out.println("User is on practice landing page");
     // Write code here that turns the phrase above into concrete actions
     //    throw new io.cucumber.java.PendingException();
+
+    Assert.assertTrue(false);
   }
 
   /**

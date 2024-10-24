@@ -5,10 +5,12 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "src/test/java/com/amt/cucuselfw/features",
     glue = "com.amt.cucuselfw.stepDefinitions", monochrome = true,
-    //    tags="@SmokeTest and @RegressionTest"
-    //    tags="@SmokeTest or @RegressionTest"
-    //    tags = "not @RegressionTest"
-    tags = "",
+    // tags="@SmokeTest and @RegressionTest"
+    // tags="@SmokeTest or @RegressionTest"
+    // tags = "not @RegressionTest"
+    // tags = "@only"
+    tags = "@GreenCart",
+    // dryRun = true
     plugin = {"pretty", "html:target/cucumber.html"}
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
